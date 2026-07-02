@@ -1,0 +1,432 @@
+/* general */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 35px;
+  margin: 0;
+  text-decoration-color: black; 
+  font-family: Roboto, sans-serif;
+  font-weight: normal; 
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header {
+  font-size: 50px;
+  background-color: #3D4193;
+  min-height: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+}
+
+.header_title {
+  font-size: 40px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: Bold;
+  margin-bottom: 30px;
+}
+
+.button-bilet {
+  background-color: #3D4193; 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  border: 4px solid #fff;
+  border-radius: 24px;
+}
+
+/* При наведении */
+.button-bilet:hover {
+  background-color: #fff;
+  color: #3D4193;
+  border: 4px solid #363a81;
+  transform: scale(1.05); 
+}
+
+.block_title,
+.block_title2,
+.block_xpCar,
+.train,
+.Excursion_Title,
+.Road_train_with_audio_guide,
+.Tour_operator_Text,
+.The_Siege_of_Leningrad,
+.bSteam_Locomotive_Depo,
+.Submarine {
+  font-size: 40px;
+  color: #3d4193;
+  font-family: Montserrat, sans-serif;
+}
+
+.Excursion_Title {
+  font-size: 60px;
+}
+
+.block_main {
+  font-size: 2.2rem;
+  text-decoration-color: black;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;  
+}
+
+.block_space_decant,
+.block_space_decant_price,
+.block_exhibition,
+.block_space,
+.block_Decant,
+.block_Afghanistan,
+.block_Text_xpCar,
+.Steam_Locomotive_Depo_Working_season,
+.Steam_Locomotive_Depot_price,
+.Steam_Locomotive_Depo_Text,
+.The_Siege_of_Leningrad_Working_season,
+.The_Siege_of_Leningrad_price,
+.The_Siege_of_Leningrad_Text,
+.Excursion_Text,
+.Excursion_Working_season,
+.Excursion_price,
+.Road_train_with_audio_guide_Text,
+.Road_train_with_audio_guide_Working_season,
+.Road_train_with_audio_guide_price,
+.Tour_operator_Warning,
+.contacs {
+  font-size: 35px;
+  text-decoration-color: black; 
+  font-family: Roboto, sans-serif;
+  font-weight: normal; 
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  margin: 40px;
+  color: #000000;
+}
+
+.navigation ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.navigation li {
+  margin-bottom: 10px; 
+}
+
+.Menu {
+  display: none;
+}
+
+footer {
+  background-color: #3d4193;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 35px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold; 
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #363a81;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.nav-link:hover {
+  background-color: #ffffff;
+  color: #363a81;
+  outline: #363a81;
+  border: 2px solid #363a81;
+}
+
+.nav-link:focus {
+  outline: 2px solid #ffeb3b;
+  outline-offset: 2px;
+}
+
+.space-content .nav-link {
+  font-size: 15px;
+  gap: 10px;
+}
+
+.exhibitions-button,
+.space-button {
+  padding: 12px 20px;
+  background-color: #363a81;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px 0;
+  text-align: left;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+}
+
+.exhibitions-button:hover,
+.space-button:hover {
+  background-color: #ffffff;
+  color: #363a81;
+  outline: #363a81;
+  border: 2px solid #363a81;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] > summary,
+details > summary:hover {
+  outline: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #363a81;
+  outline: #363a81;
+  border: 2px solid #363a81;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+details > summary {
+  background: #ffffff;
+  color: #363a81;
+  outline: #363a81;
+  border: 2px solid #363a81;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.gallery-item {
+  cursor: pointer;
+  flex: 1 1 calc(33.333% - 10px);
+  min-width: 250px;
+}
+
+.image-gallery img {
+  max-width: 49%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.02);
+}
+
+
+
+.image-gallery,
+.image-gallery-bus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;    
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.image-gallery img,
+.image-gallery-bus img {
+  max-width: 49%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.image-gallery img:hover,
+.image-gallery-bus img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Вертикальное выравнивание по центру */
+  gap: 0.75em; /* Отступ между иконкой и текстом */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.modal-close:hover {
+  color: #ccc;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin: auto;
+  max-width: 90%;
+}
+
+#modal-img {
+  max-height: 70vh;
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.caption {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  font-family: Roboto, sans-serif;
+}
+
+/* Кнопки навигации */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: #333;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1001;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+
+.logo-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none; /* убираем подчёркивание ссылки */
+}
+
+.logo-link::after {
+  content: "Перейти на главную страницу";
+  position: absolute;
+  bottom: 125%; /* размещаем над изображением */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #363a81;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.logo-link:hover::after {
+  opacity: 1;
+}
+
+/* Стили для стрелки-треугольника (необязательно) */
+.logo-link::before {
+  content: "";
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #333;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.logo-link:hover::before {
+  opacity: 1;
+}
+

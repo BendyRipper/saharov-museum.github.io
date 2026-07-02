@@ -1,0 +1,170 @@
+@media (max-width: 768px) {
+  /* Общие настройки для контейнера */
+  .container,
+  .container2 {
+    padding: 10px;
+    width: 100%;
+  }
+
+  body {
+    font-size: 0.95em;
+    margin: 0;
+  }
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .header_title {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .button-bilet {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  /* Навигация */
+  .navigation_container {
+    padding: 0;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav-link,
+  .exhibitions-button,
+  .space-button {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    text-align: left;
+    border-radius: 10px;
+    color: white;
+    background-color: #363a81;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .nav-link:hover {
+    background-color: #ffffff;
+    color: #363a81;
+    outline: #363a81;
+    border: 2px solid #363a81;
+  }
+
+  .exhibitions-button:hover,
+  .space-button:hover {
+    background-color: #ffffff;
+    color: #363a81;
+    outline: #363a81;
+    border: 2px solid #363a81;
+    padding: 12px 20px;
+    border-radius: 10px;
+  }
+
+  .exhibitions-content,
+  .space-content {
+    position: static;
+    display: none; /* Скрываем вложенные меню по умолчанию */
+  }
+
+  details[open] .exhibitions-content,
+  details[open] .space-content {
+    display: block; /* Показываем при открытии */
+  }
+
+  /* Секции выставок */
+  .block_title,
+  .block_title2,
+  .block_xpCar,
+  .bSteam_Locomotive_Depo,
+  .The_Siege_of_Leningrad,
+  .Excursion_Title,
+  .Road_train_with_audio_guide,
+  .Tour_operator_Text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .block_main,
+  .block_space_decant,
+  .block_space_decant_price,
+  .block_exhibition,
+  .block_space,
+  .block_Decant,
+  .block_Afghanistan,
+  .block_Text_xpCar,
+  .Steam_Locomotive_Depo_Working_season,
+  .Steam_Locomotive_Depot_price,
+  .Steam_Locomotive_Depo_Text,
+  .The_Siege_of_Leningrad_Working_season,
+  .The_Siege_of_Leningrad_price,
+  .The_Siege_of_Leningrad_Text,
+  .Excursion_Text,
+  .Excursion_Working_season,
+  .Excursion_price,
+  .Road_train_with_audio_guide_Text,
+  .Road_train_with_audio_guide_Working_season,
+  .Road_train_with_audio_guide_price,
+  .Tour_operator_Warning,
+  .contacs {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* Изображения */
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Галерея изображений — центрирование и анимация */
+  .image-gallery,
+  .image-gallery-bus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center;    /* Центрируем по вертикали */
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .image-gallery img,
+  .image-gallery-bus img {
+    width: calc(50% - 10px); /* Две картинки в ряд */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .image-gallery img:hover,
+  .image-gallery-bus img:hover {
+    transform: scale(1.03); /* Увеличение на 3 % при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    z-index: 10; /* Поднимаем элемент над соседями */
+  }
+
+  /* Дополнительные улучшения */
+  footer {
+    font-size: 0.9rem;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
