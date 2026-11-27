@@ -483,25 +483,21 @@ function applySearch(query) {
 }
 
 searchInputs.forEach(input => {
-  // поиск только по Enter
   input.addEventListener('keydown', e => {
     if (e.key === 'Enter') {
       e.preventDefault();
       applySearch(normalize(input.value.trim()));
 
-      // если мобильный инпут внутри <details> — закрываем панель
       const panel = input.closest('details');
       if (panel) panel.removeAttribute('open');
       input.blur();
     }
   });
 
-  // очистили поле — карточки вернулись сразу
   input.addEventListener('input', () => {
     if (input.value.trim() === '' && lastQuery !== '') {
       applySearch('');
     }
-    // синхронизируем второй инпут
     searchInputs.forEach(other => { if (other !== input) other.value = input.value; });
   });
 });
