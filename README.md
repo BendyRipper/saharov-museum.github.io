@@ -183,20 +183,7 @@
 </footer>
 
 
-<button class="chat-toggle" id="chatToggle" aria-label="Открыть чат вопросов и ответов">💬</button>
 
-<div class="chat-widget" id="chatWidget" hidden>
-  <div class="chat-header">
-    <span>Вопрос-ответ</span>
-    <button class="chat-close" id="chatClose" aria-label="Закрыть чат">×</button>
-  </div>
-  <div class="chat-messages" id="chatMessages"></div>
-  <div class="chat-quick" id="chatQuick"></div>
-  <form class="chat-input" id="chatForm">
-    <input type="text" id="chatText" placeholder="Напишите ваш вопрос..." autocomplete="off">
-    <button type="submit" aria-label="Отправить">➤</button>
-  </form>
-</div>
 
 <div id="modal" class="modal">
   <span class="modal-close">&times;</span>
