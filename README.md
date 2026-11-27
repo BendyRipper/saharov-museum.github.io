@@ -31,35 +31,6 @@
         <span class="burger-line"></span>
         <span class="burger-line"></span>
     </button>
-
-    <nav class="navigation" id="siteNav">
-      <ul class="nav-list">
-        <li>
-          <details class="nav-accordion">
-            <summary class="nav-summary">Выставки</summary>
-            <div class="nav-sublist">
-              <a href="#Истории-техники" class="nav-link">Истории техники</a>
-              <a href="#экспериментальные-автомобили" class="nav-link">Экспериментальные автомобили</a>
-              <a href="#паровозное-депо" class="nav-link">Паровозное депо</a>
-              <a href="#блокада-ленинграда" class="nav-link">Блокада Ленинграда</a>
-              <details class="nav-accordion">
-                <summary class="nav-summary nav-summary-inner">Космический десант</summary>
-                <div class="nav-sublist">
-                  <a href="#космос" class="nav-link">Космос</a>
-                  <a href="#десантная-техника" class="nav-link">Десантная техника</a>
-                  <a href="#афган" class="nav-link">Афган</a>
-                </div>
-              </details>
-            </div>
-          </details>
-        </li>
-        <li><a href="Gallery.html" class="nav-link">Галерея</a></li>
-        <li><a href="contact.html" class="nav-link">Контакты</a></li>
-        <li><a href="#Экскурсия" class="nav-link">Экскурсия</a></li>
-        <li><a href="#Туроператор" class="nav-link">Туроператор</a></li>
-      </ul>
-    </nav>
-</div>
 </main>
 
 <!-- Выставки -->
